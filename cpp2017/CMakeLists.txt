@@ -12,10 +12,13 @@ endif()
 project(cpp2017)
 
 
-add_executable(receiver17 receiver.cpp)
+add_executable(receiver17 receiver.cpp "src/QueueOperations.cpp" "src/QueueOperations.h")
 
 
 add_executable(sender17 src/Sender.cpp)
+
+target_include_directories(receiver17 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
+target_include_directories(sender17 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 set_target_properties(receiver17 sender17 PROPERTIES
     CXX_STANDARD 17
     CXX_STANDARD_REQUIRED ON
