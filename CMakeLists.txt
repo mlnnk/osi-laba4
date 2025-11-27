@@ -13,7 +13,7 @@ project ("osi-laba4")
 
 # Добавьте источник в исполняемый файл этого проекта.
 add_subdirectory(cpp2017)
-add_subdirectory(cpp1998)
+add_subdirectory(cpp2011)
 
 
 # TODO: Добавьте тесты и целевые объекты, если это необходимо.

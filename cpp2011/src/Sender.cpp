@@ -11,6 +11,7 @@ using namespace std;
 const int maxMessageLength = 20;
 int main(int argc, char* argv[])
 {
+	cout << argc;
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	string binFileName( argv[1]);
